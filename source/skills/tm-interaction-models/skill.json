@@ -1,0 +1,14 @@
+{
+  "id": "tm-interaction-models",
+  "name": "tm-interaction-models",
+  "display_name": "Interaction Models",
+  "description": "Use when designing real-time human-AI collaboration, live voice/video/text interfaces, interruption handling, micro-turn interaction, concurrent tool use, visual proactivity, or foreground/background model coordination.",
+  "use_when": "designing real-time human-AI collaboration, live voice/video/text interfaces, interruption handling, micro-turn interaction, concurrent tool use, visual proactivity, or foreground/background model coordination.",
+  "tags": [
+    "interaction",
+    "multimodal"
+  ],
+  "source_pages": [
+    "https://thinkingmachines.ai/blog/interaction-models/"
+  ]
+}

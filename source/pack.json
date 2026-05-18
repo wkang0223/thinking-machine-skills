@@ -1,0 +1,35 @@
+{
+  "name": "thinking-machine-skills",
+  "display_name": "Thinking Machine Skills",
+  "version": "0.2.0",
+  "snapshot_date": "2026-05-18",
+  "status": "unofficial_research_synthesis",
+  "punchline": "Open-source skills that help any LLM collaborate, customize, and prove its thinking.",
+  "description": "A model-agnostic skill pack distilled from public Thinking Machines Lab themes for building collaborative, customizable, reproducible, and empirically grounded AI systems.",
+  "license": "MIT",
+  "repo_name": "thinking-machine-skills",
+  "source_pages": [
+    "https://thinkingmachines.ai/",
+    "https://thinkingmachines.ai/tinker/",
+    "https://thinkingmachines.ai/blog/",
+    "https://thinkingmachines.ai/blog/interaction-models/",
+    "https://thinkingmachines.ai/blog/on-policy-distillation/",
+    "https://thinkingmachines.ai/blog/lora/",
+    "https://thinkingmachines.ai/blog/modular-manifolds/",
+    "https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/",
+    "https://thinkingmachines.ai/news/",
+    "https://thinkingmachines.ai/news/training-llms-to-predict-world-events/",
+    "https://thinkingmachines.ai/news/tinker-general-availability/",
+    "https://thinkingmachines.ai/news/call-for-community-projects/",
+    "https://thinkingmachines.ai/news/tinker-research-and-teaching-grants/",
+    "https://thinkingmachines.ai/news/announcing-tinker/",
+    "https://thinkingmachines.ai/news/nvidia-partnership/"
+  ],
+  "platforms": {
+    "claude_code": ".claude/skills/",
+    "claude_custom_skill_zip": "claude/thinking-machine-skill.zip",
+    "openai_prompt_pack": "dist/openai/thinking-machine-system.md",
+    "gemini_prompt_pack": "dist/gemini/thinking-machine-gem.md",
+    "mcp_resources": "dist/mcp/resources/"
+  }
+}

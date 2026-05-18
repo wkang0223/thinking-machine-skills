@@ -1,0 +1,14 @@
+{
+  "id": "tm-on-policy-distillation",
+  "name": "tm-on-policy-distillation",
+  "display_name": "On-Policy Distillation",
+  "description": "Use when training a student model with its own sampled rollouts and dense teacher feedback for reasoning, personalization, behavior recovery, continual learning, or context distillation.",
+  "use_when": "training a student model with its own sampled rollouts and dense teacher feedback for reasoning, personalization, behavior recovery, continual learning, or context distillation.",
+  "tags": [
+    "training",
+    "distillation"
+  ],
+  "source_pages": [
+    "https://thinkingmachines.ai/blog/on-policy-distillation/"
+  ]
+}

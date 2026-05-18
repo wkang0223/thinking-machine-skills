@@ -1,0 +1,178 @@
+{
+  "name": "thinking-machine-skills",
+  "version": "0.2.0",
+  "snapshot_date": "2026-05-18",
+  "purpose": "A model-agnostic skill pack distilled from public Thinking Machines Lab themes for building collaborative, customizable, reproducible, and empirically grounded AI systems.",
+  "status": "unofficial_research_synthesis",
+  "punchline": "Open-source skills that help any LLM collaborate, customize, and prove its thinking.",
+  "loader": "loader.md",
+  "source_of_truth": {
+    "pack": "source/pack.json",
+    "skills": "source/skills/<skill-id>/",
+    "evals": "source/evals/",
+    "build_command": "python3 scripts/skillpack.py build"
+  },
+  "platforms": {
+    "claude_code": ".claude/skills/",
+    "claude_custom_skill_zip": "claude/thinking-machine-skill.zip",
+    "openai_prompt_pack": "dist/openai/thinking-machine-system.md",
+    "gemini_prompt_pack": "dist/gemini/thinking-machine-gem.md",
+    "mcp_resources": "dist/mcp/resources/"
+  },
+  "skills": [
+    {
+      "id": "tm-experiment-rigor",
+      "path": "skills/tm-experiment-rigor/SKILL.md",
+      "display_name": "Experiment Rigor",
+      "use_when": "planning, running, reviewing, or writing up ML experiments with strong baselines, ablations, hyperparameter sweeps, raw examples, clean charts, and transparent assumptions.",
+      "tags": [
+        "experiments"
+      ],
+      "source_pages": [
+        "https://thinkingmachines.ai/news/call-for-community-projects/",
+        "https://thinkingmachines.ai/blog/"
+      ]
+    },
+    {
+      "id": "tm-forecasting-systems",
+      "path": "skills/tm-forecasting-systems/SKILL.md",
+      "display_name": "Forecasting Systems",
+      "use_when": "building LLM systems for judgmental forecasting, probability prediction, world-event analysis, proper scoring, forecasting-specific fine-tuning, or ensemble forecasts.",
+      "tags": [
+        "training",
+        "forecasting"
+      ],
+      "source_pages": [
+        "https://thinkingmachines.ai/news/training-llms-to-predict-world-events/"
+      ]
+    },
+    {
+      "id": "tm-interaction-models",
+      "path": "skills/tm-interaction-models/SKILL.md",
+      "display_name": "Interaction Models",
+      "use_when": "designing real-time human-AI collaboration, live voice/video/text interfaces, interruption handling, micro-turn interaction, concurrent tool use, visual proactivity, or foreground/background model coordination.",
+      "tags": [
+        "interaction",
+        "multimodal"
+      ],
+      "source_pages": [
+        "https://thinkingmachines.ai/blog/interaction-models/"
+      ]
+    },
+    {
+      "id": "tm-lora-adapter-training",
+      "path": "skills/tm-lora-adapter-training/SKILL.md",
+      "display_name": "LoRA Adapter Training",
+      "use_when": "choosing LoRA, adapters, PEFT settings, target modules, rank, learning rate, batch size, or baseline comparisons for efficient LLM post-training.",
+      "tags": [
+        "training",
+        "lora"
+      ],
+      "source_pages": [
+        "https://thinkingmachines.ai/blog/lora/"
+      ]
+    },
+    {
+      "id": "tm-modular-optimization",
+      "path": "skills/tm-modular-optimization/SKILL.md",
+      "display_name": "Modular Optimization",
+      "use_when": "exploring optimizer and architecture co-design, manifold constraints, tensor health, Stiefel constraints, modular manifolds, Lipschitz-aware learning-rate budgets, or principled neural network training research.",
+      "tags": [
+        "training",
+        "optimization",
+        "principles"
+      ],
+      "source_pages": [
+        "https://thinkingmachines.ai/blog/modular-manifolds/"
+      ]
+    },
+    {
+      "id": "tm-multimodal-customization",
+      "path": "skills/tm-multimodal-customization/SKILL.md",
+      "display_name": "Multimodal Customization",
+      "use_when": "customizing or fine-tuning models for image, audio, video, screenshot, diagram, classification, or mixed-modality tasks, especially with low data or VLM adapters.",
+      "tags": [
+        "interaction",
+        "training",
+        "lora",
+        "multimodal"
+      ],
+      "source_pages": [
+        "https://thinkingmachines.ai/news/tinker-general-availability/",
+        "https://thinkingmachines.ai/blog/interaction-models/"
+      ]
+    },
+    {
+      "id": "tm-on-policy-distillation",
+      "path": "skills/tm-on-policy-distillation/SKILL.md",
+      "display_name": "On-Policy Distillation",
+      "use_when": "training a student model with its own sampled rollouts and dense teacher feedback for reasoning, personalization, behavior recovery, continual learning, or context distillation.",
+      "tags": [
+        "training",
+        "distillation"
+      ],
+      "source_pages": [
+        "https://thinkingmachines.ai/blog/on-policy-distillation/"
+      ]
+    },
+    {
+      "id": "tm-reproducible-inference",
+      "path": "skills/tm-reproducible-inference/SKILL.md",
+      "display_name": "Reproducible Inference",
+      "use_when": "diagnosing nondeterministic LLM outputs, designing reproducible inference, aligning trainer and sampler numerics, or evaluating batch-size and load-related output drift.",
+      "tags": [
+        "reproducibility"
+      ],
+      "source_pages": [
+        "https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/"
+      ]
+    },
+    {
+      "id": "tm-research-principles",
+      "path": "skills/tm-research-principles/SKILL.md",
+      "display_name": "Thinking Machine Research Principles",
+      "use_when": "shaping an LLM product, research plan, or agent behavior around Thinking Machines-style principles: shared science, customization, human-AI collaboration, solid infrastructure, multimodality, product-research co-design, empirical safety, and real-world value measurement.",
+      "tags": [
+        "interaction",
+        "training",
+        "multimodal",
+        "principles"
+      ],
+      "source_pages": [
+        "https://thinkingmachines.ai/"
+      ]
+    },
+    {
+      "id": "tm-training-api",
+      "path": "skills/tm-training-api/SKILL.md",
+      "display_name": "Training API Abstraction",
+      "use_when": "designing a model-agnostic training API, fine-tuning loop, RL loop, distillation backend, checkpoint workflow, or LLM training abstraction inspired by Tinker-style primitives.",
+      "tags": [
+        "training",
+        "distillation"
+      ],
+      "source_pages": [
+        "https://thinkingmachines.ai/tinker/",
+        "https://thinkingmachines.ai/news/announcing-tinker/",
+        "https://thinkingmachines.ai/news/tinker-general-availability/"
+      ]
+    }
+  ],
+  "source_pages": [
+    "https://thinkingmachines.ai/",
+    "https://thinkingmachines.ai/tinker/",
+    "https://thinkingmachines.ai/blog/",
+    "https://thinkingmachines.ai/blog/interaction-models/",
+    "https://thinkingmachines.ai/blog/on-policy-distillation/",
+    "https://thinkingmachines.ai/blog/lora/",
+    "https://thinkingmachines.ai/blog/modular-manifolds/",
+    "https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/",
+    "https://thinkingmachines.ai/news/",
+    "https://thinkingmachines.ai/news/training-llms-to-predict-world-events/",
+    "https://thinkingmachines.ai/news/tinker-general-availability/",
+    "https://thinkingmachines.ai/news/call-for-community-projects/",
+    "https://thinkingmachines.ai/news/tinker-research-and-teaching-grants/",
+    "https://thinkingmachines.ai/news/announcing-tinker/",
+    "https://thinkingmachines.ai/news/nvidia-partnership/"
+  ]
+}

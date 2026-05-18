@@ -1,0 +1,76 @@
+{
+  "name": "thinking-machine-skills",
+  "description": "A model-agnostic skill pack distilled from public Thinking Machines Lab themes for building collaborative, customizable, reproducible, and empirically grounded AI systems.",
+  "resources": [
+    {
+      "uri": "thinking-machine://skills/tm-experiment-rigor",
+      "name": "Experiment Rigor",
+      "description": "Use when planning, running, reviewing, or writing up ML experiments with strong baselines, ablations, hyperparameter sweeps, raw examples, clean charts, and transparent assumptions.",
+      "mimeType": "text/markdown",
+      "path": "tm-experiment-rigor.md"
+    },
+    {
+      "uri": "thinking-machine://skills/tm-forecasting-systems",
+      "name": "Forecasting Systems",
+      "description": "Use when building LLM systems for judgmental forecasting, probability prediction, world-event analysis, proper scoring, forecasting-specific fine-tuning, or ensemble forecasts.",
+      "mimeType": "text/markdown",
+      "path": "tm-forecasting-systems.md"
+    },
+    {
+      "uri": "thinking-machine://skills/tm-interaction-models",
+      "name": "Interaction Models",
+      "description": "Use when designing real-time human-AI collaboration, live voice/video/text interfaces, interruption handling, micro-turn interaction, concurrent tool use, visual proactivity, or foreground/background model coordination.",
+      "mimeType": "text/markdown",
+      "path": "tm-interaction-models.md"
+    },
+    {
+      "uri": "thinking-machine://skills/tm-lora-adapter-training",
+      "name": "LoRA Adapter Training",
+      "description": "Use when choosing LoRA, adapters, PEFT settings, target modules, rank, learning rate, batch size, or baseline comparisons for efficient LLM post-training.",
+      "mimeType": "text/markdown",
+      "path": "tm-lora-adapter-training.md"
+    },
+    {
+      "uri": "thinking-machine://skills/tm-modular-optimization",
+      "name": "Modular Optimization",
+      "description": "Use when exploring optimizer and architecture co-design, manifold constraints, tensor health, Stiefel constraints, modular manifolds, Lipschitz-aware learning-rate budgets, or principled neural network training research.",
+      "mimeType": "text/markdown",
+      "path": "tm-modular-optimization.md"
+    },
+    {
+      "uri": "thinking-machine://skills/tm-multimodal-customization",
+      "name": "Multimodal Customization",
+      "description": "Use when customizing or fine-tuning models for image, audio, video, screenshot, diagram, classification, or mixed-modality tasks, especially with low data or VLM adapters.",
+      "mimeType": "text/markdown",
+      "path": "tm-multimodal-customization.md"
+    },
+    {
+      "uri": "thinking-machine://skills/tm-on-policy-distillation",
+      "name": "On-Policy Distillation",
+      "description": "Use when training a student model with its own sampled rollouts and dense teacher feedback for reasoning, personalization, behavior recovery, continual learning, or context distillation.",
+      "mimeType": "text/markdown",
+      "path": "tm-on-policy-distillation.md"
+    },
+    {
+      "uri": "thinking-machine://skills/tm-reproducible-inference",
+      "name": "Reproducible Inference",
+      "description": "Use when diagnosing nondeterministic LLM outputs, designing reproducible inference, aligning trainer and sampler numerics, or evaluating batch-size and load-related output drift.",
+      "mimeType": "text/markdown",
+      "path": "tm-reproducible-inference.md"
+    },
+    {
+      "uri": "thinking-machine://skills/tm-research-principles",
+      "name": "Thinking Machine Research Principles",
+      "description": "Use when shaping an LLM product, research plan, or agent behavior around Thinking Machines-style principles: shared science, customization, human-AI collaboration, solid infrastructure, multimodality, product-research co-design, empirical safety, and real-world value measurement.",
+      "mimeType": "text/markdown",
+      "path": "tm-research-principles.md"
+    },
+    {
+      "uri": "thinking-machine://skills/tm-training-api",
+      "name": "Training API Abstraction",
+      "description": "Use when designing a model-agnostic training API, fine-tuning loop, RL loop, distillation backend, checkpoint workflow, or LLM training abstraction inspired by Tinker-style primitives.",
+      "mimeType": "text/markdown",
+      "path": "tm-training-api.md"
+    }
+  ]
+}

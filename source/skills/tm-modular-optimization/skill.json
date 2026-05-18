@@ -1,0 +1,15 @@
+{
+  "id": "tm-modular-optimization",
+  "name": "tm-modular-optimization",
+  "display_name": "Modular Optimization",
+  "description": "Use when exploring optimizer and architecture co-design, manifold constraints, tensor health, Stiefel constraints, modular manifolds, Lipschitz-aware learning-rate budgets, or principled neural network training research.",
+  "use_when": "exploring optimizer and architecture co-design, manifold constraints, tensor health, Stiefel constraints, modular manifolds, Lipschitz-aware learning-rate budgets, or principled neural network training research.",
+  "tags": [
+    "training",
+    "optimization",
+    "principles"
+  ],
+  "source_pages": [
+    "https://thinkingmachines.ai/blog/modular-manifolds/"
+  ]
+}

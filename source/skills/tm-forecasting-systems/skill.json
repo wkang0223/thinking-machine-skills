@@ -1,0 +1,14 @@
+{
+  "id": "tm-forecasting-systems",
+  "name": "tm-forecasting-systems",
+  "display_name": "Forecasting Systems",
+  "description": "Use when building LLM systems for judgmental forecasting, probability prediction, world-event analysis, proper scoring, forecasting-specific fine-tuning, or ensemble forecasts.",
+  "use_when": "building LLM systems for judgmental forecasting, probability prediction, world-event analysis, proper scoring, forecasting-specific fine-tuning, or ensemble forecasts.",
+  "tags": [
+    "training",
+    "forecasting"
+  ],
+  "source_pages": [
+    "https://thinkingmachines.ai/news/training-llms-to-predict-world-events/"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "tm-lora-adapter-training",
+  "name": "tm-lora-adapter-training",
+  "display_name": "LoRA Adapter Training",
+  "description": "Use when choosing LoRA, adapters, PEFT settings, target modules, rank, learning rate, batch size, or baseline comparisons for efficient LLM post-training.",
+  "use_when": "choosing LoRA, adapters, PEFT settings, target modules, rank, learning rate, batch size, or baseline comparisons for efficient LLM post-training.",
+  "tags": [
+    "training",
+    "lora"
+  ],
+  "source_pages": [
+    "https://thinkingmachines.ai/blog/lora/"
+  ]
+}

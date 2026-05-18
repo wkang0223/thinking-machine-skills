@@ -1,0 +1,66 @@
+{
+  "name": "thinking-machine-smoke-evals",
+  "description": "Lightweight qualitative eval prompts for checking whether a model uses the skill pack behaviorally, not just cosmetically.",
+  "cases": [
+    {
+      "id": "interaction-interruption",
+      "skill": "tm-interaction-models",
+      "prompt": "Design a live voice and screen-share AI assistant that can be interrupted mid-answer while a background agent searches docs.",
+      "should_include": [
+        "foreground/background model split",
+        "event log or shared context",
+        "interruption handling",
+        "latency or timing evaluation"
+      ],
+      "failure_modes": [
+        "treats real-time collaboration as ordinary chat",
+        "does not specify how background results merge back in"
+      ]
+    },
+    {
+      "id": "lora-settings",
+      "skill": "tm-lora-adapter-training",
+      "prompt": "Choose LoRA settings for domain SFT with 50k examples and a tight serving memory budget.",
+      "should_include": [
+        "rank and capacity tradeoff",
+        "target module selection",
+        "learning-rate sweep",
+        "batch-size sweep or caution"
+      ],
+      "failure_modes": [
+        "recommends attention-only LoRA without justification",
+        "omits baseline comparisons"
+      ]
+    },
+    {
+      "id": "reproducible-inference",
+      "skill": "tm-reproducible-inference",
+      "prompt": "Audit why temperature-0 completions vary under production load.",
+      "should_include": [
+        "batch invariance",
+        "chunking or prefix cache effects",
+        "kernel reduction order",
+        "recorded model and serving metadata"
+      ],
+      "failure_modes": [
+        "blames randomness only on sampling",
+        "claims temperature 0 guarantees determinism"
+      ]
+    },
+    {
+      "id": "forecasting",
+      "skill": "tm-forecasting-systems",
+      "prompt": "Build an LLM workflow to forecast whether a specific bill will pass before a deadline.",
+      "should_include": [
+        "resolution criteria",
+        "research and prediction phases",
+        "proper scoring rule",
+        "calibration or update triggers"
+      ],
+      "failure_modes": [
+        "outputs a probability without defining event resolution",
+        "uses rationale quality as the only evaluation"
+      ]
+    }
+  ]
+}

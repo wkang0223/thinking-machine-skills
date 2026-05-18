@@ -1,0 +1,16 @@
+{
+  "id": "tm-training-api",
+  "name": "tm-training-api",
+  "display_name": "Training API Abstraction",
+  "description": "Use when designing a model-agnostic training API, fine-tuning loop, RL loop, distillation backend, checkpoint workflow, or LLM training abstraction inspired by Tinker-style primitives.",
+  "use_when": "designing a model-agnostic training API, fine-tuning loop, RL loop, distillation backend, checkpoint workflow, or LLM training abstraction inspired by Tinker-style primitives.",
+  "tags": [
+    "training",
+    "distillation"
+  ],
+  "source_pages": [
+    "https://thinkingmachines.ai/tinker/",
+    "https://thinkingmachines.ai/news/announcing-tinker/",
+    "https://thinkingmachines.ai/news/tinker-general-availability/"
+  ]
+}

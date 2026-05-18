@@ -1,0 +1,17 @@
+{
+  "id": "tm-multimodal-customization",
+  "name": "tm-multimodal-customization",
+  "display_name": "Multimodal Customization",
+  "description": "Use when customizing or fine-tuning models for image, audio, video, screenshot, diagram, classification, or mixed-modality tasks, especially with low data or VLM adapters.",
+  "use_when": "customizing or fine-tuning models for image, audio, video, screenshot, diagram, classification, or mixed-modality tasks, especially with low data or VLM adapters.",
+  "tags": [
+    "interaction",
+    "training",
+    "lora",
+    "multimodal"
+  ],
+  "source_pages": [
+    "https://thinkingmachines.ai/news/tinker-general-availability/",
+    "https://thinkingmachines.ai/blog/interaction-models/"
+  ]
+}

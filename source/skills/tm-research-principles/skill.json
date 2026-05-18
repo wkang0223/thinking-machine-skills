@@ -1,0 +1,16 @@
+{
+  "id": "tm-research-principles",
+  "name": "tm-research-principles",
+  "display_name": "Thinking Machine Research Principles",
+  "description": "Use when shaping an LLM product, research plan, or agent behavior around Thinking Machines-style principles: shared science, customization, human-AI collaboration, solid infrastructure, multimodality, product-research co-design, empirical safety, and real-world value measurement.",
+  "use_when": "shaping an LLM product, research plan, or agent behavior around Thinking Machines-style principles: shared science, customization, human-AI collaboration, solid infrastructure, multimodality, product-research co-design, empirical safety, and real-world value measurement.",
+  "tags": [
+    "interaction",
+    "training",
+    "multimodal",
+    "principles"
+  ],
+  "source_pages": [
+    "https://thinkingmachines.ai/"
+  ]
+}

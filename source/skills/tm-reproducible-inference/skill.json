@@ -1,0 +1,13 @@
+{
+  "id": "tm-reproducible-inference",
+  "name": "tm-reproducible-inference",
+  "display_name": "Reproducible Inference",
+  "description": "Use when diagnosing nondeterministic LLM outputs, designing reproducible inference, aligning trainer and sampler numerics, or evaluating batch-size and load-related output drift.",
+  "use_when": "diagnosing nondeterministic LLM outputs, designing reproducible inference, aligning trainer and sampler numerics, or evaluating batch-size and load-related output drift.",
+  "tags": [
+    "reproducibility"
+  ],
+  "source_pages": [
+    "https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/"
+  ]
+}

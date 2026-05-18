@@ -1,0 +1,14 @@
+{
+  "id": "tm-experiment-rigor",
+  "name": "tm-experiment-rigor",
+  "display_name": "Experiment Rigor",
+  "description": "Use when planning, running, reviewing, or writing up ML experiments with strong baselines, ablations, hyperparameter sweeps, raw examples, clean charts, and transparent assumptions.",
+  "use_when": "planning, running, reviewing, or writing up ML experiments with strong baselines, ablations, hyperparameter sweeps, raw examples, clean charts, and transparent assumptions.",
+  "tags": [
+    "experiments"
+  ],
+  "source_pages": [
+    "https://thinkingmachines.ai/news/call-for-community-projects/",
+    "https://thinkingmachines.ai/blog/"
+  ]
+}
