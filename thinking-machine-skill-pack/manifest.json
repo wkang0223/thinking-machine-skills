@@ -13,6 +13,7 @@
     "build_command": "python3 scripts/skillpack.py build"
   },
   "platforms": {
+    "codex_local_skill": "codex/thinking-machine/",
     "claude_code": ".claude/skills/",
     "claude_custom_skill_zip": "claude/thinking-machine-skill.zip",
     "openai_prompt_pack": "dist/openai/thinking-machine-system.md",

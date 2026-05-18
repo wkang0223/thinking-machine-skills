@@ -222,6 +222,15 @@ def write_claude(pack: dict, skills: list[Skill]) -> None:
     zip_skill_bundle(bundle, ROOT / "claude" / "thinking-machine-skill.zip")
 
 
+def write_codex(pack: dict, skills: list[Skill]) -> None:
+    out = ROOT / "codex" / "thinking-machine"
+    clean_dir(out / "references")
+    write_text(out / "SKILL.md", render_codex_router(pack, skills))
+    for skill in skills:
+        write_text(out / "references" / f"{skill.id}.md", skill_markdown(skill))
+    write_text(out / "references" / "sources.md", render_sources(pack, skills))
+
+
 def write_openai(pack: dict, skills: list[Skill]) -> None:
     out = ROOT / "dist" / "openai"
     clean_dir(out)
@@ -430,6 +439,57 @@ For design or implementation tasks, return:
 """
 
 
+def render_codex_router(pack: dict, skills: list[Skill]) -> str:
+    routes = "\n".join(
+        f"- {skill.use_when}: `references/{skill.id}.md`" for skill in skills
+    )
+    return f"""---
+name: thinking-machine
+description: Model-agnostic Thinking Machine skill router for Codex. Use for interaction models, training APIs, LoRA, on-policy distillation, reproducible inference, experiment rigor, forecasting, modular optimization, and multimodal customization.
+---
+
+# Thinking Machine
+
+{pack['punchline']}
+
+Use this Skill as the Codex router for the full Thinking Machine skill pack. It points Codex to topic files in `references/` when deeper procedure is needed.
+
+## Operating stance
+
+- Build AI people can understand, shape, and use for their own goals.
+- Keep humans in the loop when judgment, feedback, tacit context, or control matter.
+- Treat customization as a spectrum: prompt, memory, retrieval, tools, adapters, fine-tuning, and training loops.
+- Treat infrastructure quality, reproducibility, evaluation, and safety as product features.
+- Prefer empirical iteration: small tests, baselines, raw examples, and clear measurement.
+
+## Topic routing
+
+When the user asks about a topic, read the matching reference file before answering or acting:
+
+{routes}
+- Source provenance for this synthesis: `references/sources.md`
+
+## Response contract
+
+For design or implementation tasks, return:
+
+- `goal`: the user-visible objective.
+- `selected_skills`: which reference files guided the response.
+- `plan_or_workflow`: concrete steps.
+- `artifacts`: prompts, code, eval plan, interface spec, or training recipe.
+- `verification`: tests, evals, examples, metrics, or review checks.
+- `open_decisions`: choices that remain unresolved.
+
+## Codex-specific behavior
+
+- Prefer local files and project context before browsing.
+- Use the direct `tm-*` skills when a task clearly matches one topic.
+- Use this router when the task spans multiple Thinking Machine topics.
+- Keep generated artifacts model-agnostic unless the user names a target provider.
+- If the task needs multiple topic files, read the smallest useful set.
+"""
+
+
 def render_prompt_pack(pack: dict, skills: list[Skill], platform: str) -> str:
     catalog = "\n".join(
         f"- `{skill.id}`: {skill.use_when}" for skill in skills
@@ -470,6 +530,7 @@ def build(_: argparse.Namespace) -> None:
     skills = load_skills()
     write_base_skill_pack(pack, skills)
     write_claude(pack, skills)
+    write_codex(pack, skills)
     write_openai(pack, skills)
     write_gemini(pack, skills)
     write_mcp_resources(pack, skills)

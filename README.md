@@ -17,6 +17,7 @@ source/                         # Source of truth
   evals/smoke.json              # Qualitative behavior checks
 
 thinking-machine-skill-pack/    # Generic generated skill pack
+codex/thinking-machine/         # Codex router skill with references
 .claude/skills/                 # Claude Code project skills
 claude/thinking-machine-skill.zip
 dist/openai/                    # OpenAI-style prompt pack
@@ -61,6 +62,22 @@ claude/thinking-machine-skill.zip
 ```
 
 Use `/thinking-machine` for broad requests, or direct skills like `/tm-interaction-models`, `/tm-lora-adapter-training`, and `/tm-reproducible-inference` for precise work.
+
+## Codex
+
+Install the direct skills from:
+
+```text
+thinking-machine-skill-pack/skills/
+```
+
+Install the broad router from:
+
+```text
+codex/thinking-machine/
+```
+
+For a local install, copy those folders into `~/.codex/skills/`, or install from the public repo with Codex's skill installer.
 
 ## OpenAI, Gemini, and MCP
 
